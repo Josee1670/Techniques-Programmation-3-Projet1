@@ -1,0 +1,17 @@
+.cardPrix {
+  display: flex;
+  justify-content: space-around;
+}
+
+.prixRabais {
+  color: green;
+}
+
+.prixSansRabais {
+  text-decoration: line-through;
+  color: red;
+}
+
+.prixAvecRabais {
+  color: black;
+}

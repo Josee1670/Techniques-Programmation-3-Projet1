@@ -1,0 +1,29 @@
+<mat-card>
+  <div>{{ forfait.destination }}</div>
+  <div>{{ forfait.villeDepart }}</div>
+  <span *ngIf="forfait.forfaitVedette"><div>FORFAIT VEDETTE</div></span>
+  <div>{{ forfait.hotel.nom }}</div>
+  <div *ngIf="forfait.rabais > 0; else elseBlock" class="cardPrix">
+    <span class="prixSansRabais">{{ forfait.prix }}$</span>
+    <span class="prixRabais">{{ forfait.rabais }}$</span>
+    <span class="prixAvecRabais">{{ forfait.prix - forfait.rabais }}$</span>
+  </div>
+  <ng-template #elseBlock
+    ><span
+      style="
+        display: flex;
+        flex: 1;
+        font-size: 1.6em;
+        justify-content: space-evenly;
+      "
+      >{{ forfait.prix }}$</span
+    ></ng-template
+  >
+  <div>
+    <app-etoiles [etoiles]="forfait.hotel.etoiles" style="font-size: 2em">
+    </app-etoiles>
+  </div>
+  <div>
+    {{ forfait.dateDepart }}, <b style="color: rgb(243, 9, 9)">7 jours</b>
+  </div>
+</mat-card>
