@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-mini-forfait',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MiniForfaitComponent implements OnInit {
 
+  @Input() destination: string = " ";
+  @Input() villeDepart: string = " ";
+  @Input() hotel: string = " ";
+  @Input() dateDepart: string = " ";
+  @Input() dateRetour: string = " ";
+
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

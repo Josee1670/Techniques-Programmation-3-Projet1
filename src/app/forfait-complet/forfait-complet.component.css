@@ -1,0 +1,61 @@
+mat-list-item {
+  margin: 10px;
+  background-color: aquamarine;
+  border-radius: 5px;
+}
+h1 {
+  font-size: 20px;
+  color: blue;
+  text-align: center;
+}
+
+.prixRabais {
+  color: green;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+.prixSansRabais {
+  text-decoration: line-through;
+  color: red;
+  font-weight: bold;
+  margin-left: 90px;
+}
+
+.prixAvecRabais {
+  color: black;
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+.material-icons {
+  color: coral;
+  margin-top: 15px;
+  margin-left: -3px;
+}
+
+div.vedette {
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+  background-color: coral;
+  margin-bottom: 30px;
+  font-size: -15px;
+}
+
+mat-card-title span {
+  font-size: 20px;
+}
+
+mat-card-subtitle {
+  color: red;
+  margin-left: 138px;
+}
+
+p span {
+  color: red;
+  font-weight: bold;
+}
+span {
+  font-weight: bold;
+}

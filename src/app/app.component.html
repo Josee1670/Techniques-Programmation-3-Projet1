@@ -1,12 +1,8 @@
-<span>{{ title }}</span>
-<mat-grid-list cols="3" rowHeight="2:1">
-  <span *ngFor="let forfait of mesForfaits">
-    <mat-grid-tile *ngIf="forfait.forfaitVedette">
-      <app-mini-forfait
-        [forfait]="forfait"
-        style="width: 100%"
-      ></app-mini-forfait>
-    </mat-grid-tile>
-  </span>
+<mat-grid-list cols="3">
+  <app-mini-forfait></app-mini-forfait>
+</mat-grid-list>
+
+<mat-grid-list cols="1">
+  <app-forfait-complet></app-forfait-complet>
 </mat-grid-list>
 <router-outlet></router-outlet>
