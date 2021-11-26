@@ -1,4 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Forfait } from '../forfait';
+import { FORFAITS } from '../mock-forfaits';
 
 
 @Component({
@@ -7,7 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./liste-forfaits.component.css']
 })
 export class ListeForfaitsComponent implements OnInit {
-  @Input() destination: string = " ";
+  forfaits: Forfait[] = FORFAITS;
 
   constructor() { }
 

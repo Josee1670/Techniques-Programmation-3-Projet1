@@ -1,12 +1,14 @@
-mat-list-item {
-  margin: 10px;
+mat-list {
   background-color: aquamarine;
-  border-radius: 5px;
+  margin-left: -100px;
+}
+
+mat-list-item {
+  margin: 130px;
 }
 h1 {
   font-size: 20px;
   color: blue;
-  text-align: center;
 }
 
 .prixRabais {
@@ -19,7 +21,7 @@ h1 {
   text-decoration: line-through;
   color: red;
   font-weight: bold;
-  margin-left: 90px;
+  margin-left: -290px;
 }
 
 .prixAvecRabais {
@@ -33,29 +35,14 @@ h1 {
   margin-top: 15px;
   margin-left: -3px;
 }
-
-div.vedette {
-  padding: 5px;
-  border-radius: 5px;
-  color: black;
-  background-color: coral;
-  margin-bottom: 30px;
-  font-size: -15px;
+p {
+  margin-left: -30px;
 }
-
-mat-card-title span {
-  font-size: 20px;
-}
-
-mat-card-subtitle {
-  color: red;
-  margin-left: 138px;
-}
-
 p span {
   color: red;
   font-weight: bold;
 }
 span {
   font-weight: bold;
+  margin-bottom: 200px;
 }

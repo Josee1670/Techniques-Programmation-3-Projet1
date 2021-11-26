@@ -1,6 +1,32 @@
 import { Forfait } from './forfait';
 
-export const FORFAITS: Forfait [] = [
+export const FORFAITS: Forfait[] = [
+    {
+        destination: 'Holguin, Cuba',
+        villeDepart: 'Québec',
+        hotel: {
+            nom: 'Paradisus Rio de Oro Resort & Spa',
+            adresse: 'Playa Esmeralda, Carretera a Guardalavaca, Rafael Freyre, Holguin, Cuba, 80200',
+            nombreEtoiles: 5,
+            nombreChambres: 354,
+            photo: "https://www.transat.com/fr-CA/hotels/paradisus-rio-de-oro-resort-spa?isPopup=true",
+            caracteristiques: [
+                "3 piscines",
+                "8 restaurants ",
+                "8 bars",
+                "Wi-Fi : hall, piscine • Spa ($)",
+                "Boissons 24 h - collations 24 h",
+                "Coffret de sûreté",
+                "Mariages"
+            ],
+        },
+        dateDepart: '29/12/2021',
+        duree: 7,
+        prix: 3080,
+        rabais: 1232,
+        forfaitVedette: true
+
+    },
    
     {
         destination: 'Montego Bay, Jamaïque',
@@ -22,8 +48,9 @@ export const FORFAITS: Forfait [] = [
                 "Spa ($)"
             ],
         },
+        
         dateDepart: '07/01/2022',
-        dateRetour: '14/01/2022',
+        duree: 7,
         prix: 2534,
         rabais: 1295,
         forfaitVedette: true
@@ -49,38 +76,13 @@ export const FORFAITS: Forfait [] = [
             ],
         },
         dateDepart: '13/03/2022',
-        dateRetour: '21/03/2022',
+        duree: 7,
         prix: 2204,
         rabais: 705,
         forfaitVedette: true
 
     },
-    {
-        destination: 'Holguin, Cuba',
-        villeDepart: 'Québec',
-        hotel: {
-            nom: 'Paradisus Rio de Oro Resort & Spa',
-            adresse: 'Playa Esmeralda, Carretera a Guardalavaca, Rafael Freyre, Holguin, Cuba, 80200',
-            nombreEtoiles: 5,
-            nombreChambres: 354,
-            photo: "https://www.transat.com/fr-CA/hotels/paradisus-rio-de-oro-resort-spa?isPopup=true",
-            caracteristiques: [
-                "3 piscines",
-                "8 restaurants ",
-                "8 bars",
-                "Wi-Fi : hall, piscine • Spa ($)",
-                "Boissons 24 h - collations 24 h",
-                "Coffret de sûreté",
-                "Mariages"
-            ],
-        },
-        dateDepart: '29/12/2021',
-        dateRetour: '05/01/2022',
-        prix: 3080,
-        rabais: 1232,
-        forfaitVedette: true
-
-    },
+    
     {
         destination: 'Paris, France',
         villeDepart: 'Vancouver',
@@ -101,7 +103,7 @@ export const FORFAITS: Forfait [] = [
             ],
         },
         dateDepart: '02/05/2022',
-        dateRetour: '10/05/2022',
+        duree: 7,
         prix: 2169,
         rabais: 400,
         forfaitVedette: false
@@ -129,7 +131,7 @@ export const FORFAITS: Forfait [] = [
             ],
         },
         dateDepart: '29/12/2021',
-        dateRetour: '05/01/2022',
+        duree: 7,
         prix: 2481,
         rabais: 422,
         forfaitVedette: false

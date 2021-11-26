@@ -1,98 +1,36 @@
-<div class="row">
-  <div class="col-4">
-    <mat-card>
-      <mat-card-header>
-        <mat-card-title
-          >{{ destination
-          }}<span *ngIf="destination === 'Holguin, Cuba'"></span>Holguin Cuba,
-          Holguin
-        </mat-card-title>
-        <mat-card-subtitle>De Québec</mat-card-subtitle>
-        <div class="vedette">FORFAIT VEDETTE</div>
-      </mat-card-header>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      <h2>{{ destination }}</h2>
+    </mat-card-title>
+    <h5>De {{ villeDepart }}</h5>
+    <div class="vedette">FORFAIT VEDETTE</div>
+  </mat-card-header>
 
-      <mat-card-content>
-        <h1>Paradisus Rio de Oro Resort & Spa</h1>
-        <div>
-          <span class="prixSansRabais">3080$</span>
-          <span class="prixRabais">1232$</span>
-          <span class="prixAvecRabais">1848$</span>
-        </div>
+  <mat-card-content>
+    <h1>{{ hotel }}</h1>
 
-        <div>
-          <span class="material-icons">grade</span>
-          <span class="material-icons">grade</span>
-          <span class="material-icons">grade</span>
-          <span class="material-icons">grade</span>
-          <span class="material-icons">grade</span>
-        </div>
-
-        <p>29/12/2021, <span>7 jours</span></p>
-      </mat-card-content>
-    </mat-card>
-  </div>
-
-  <div class="col-4">
-    <mat-card>
-      <mat-card-header>
-        <mat-card-title
-          >{{ destination
-          }}<span *ngIf="destination === 'Montego Bay, Jamaïque'"></span>Montego
-          Bay, Jamaïque</mat-card-title
-        >
-        <mat-card-subtitle>De Montréal</mat-card-subtitle>
-        <div class="vedette">FORFAIT VEDETTE</div>
-      </mat-card-header>
-
-      <mat-card-content>
-        <h1>Holiday Inn Resort Montego Bay</h1>
-        <div>
-          <span class="prixSansRabais">2534$</span>
-          <span class="prixRabais">1295$</span>
-          <span class="prixAvecRabais">1239$</span>
-        </div>
-
-        <div>
-          <span class="material-icons">grade</span>
-          <span class="material-icons">grade</span>
-          <span class="material-icons">grade</span>
-          <span class="material-icons">grade</span>
-        </div>
-
-        <p>07/01/2022, <span>7 jours</span></p>
-      </mat-card-content>
-    </mat-card>
-  </div>
-
-  <div class="col-4">
-    <mat-card>
-      <mat-card-header>
-        <mat-card-title
-          >{{ destination
-          }}<span *ngIf="destination === 'Porto, Portugal'"></span>Porto
-          Portugal, Portugal</mat-card-title
-        >
-        <mat-card-subtitle>De Montréal</mat-card-subtitle>
-        <div class="vedette">FORFAIT VEDETTE</div>
-      </mat-card-header>
-
-      <mat-card-content>
-        <h1>Hotel Dom Henrique</h1>
-        <div>
-          <span class="prixSansRabais">2204$</span>
-          <span class="prixRabais">705$</span>
-          <span class="prixAvecRabais">1499$</span>
-        </div>
-
-        <div>
-          <span class="material-icons">grade</span>
-          <span class="material-icons">grade</span>
-          <span class="material-icons">grade</span>
-          <span class="material-icons">grade</span>
-        </div>
-
-        <p>13/03/2022, <span>7 jours</span></p>
-      </mat-card-content>
-    </mat-card>
-  </div>
-</div>
+    <div>
+      <span class="prixSansRabais"
+        ><h4>{{ prix }}$</h4>
+      </span>
+      <span class="prixRabais"
+        ><h4>{{ rabais }}$</h4></span
+      >
+      <span class="prixAvecRabais"
+        ><h4>{{ prixRabais }}$</h4></span
+      >
+    </div>
+    <h4>{{ taxes }}</h4>
+    <div>
+      <span class="material-icons">grade</span>
+      <span class="material-icons">grade</span>
+      <span class="material-icons">grade</span>
+      <span class="material-icons">grade</span>
+      <span class="material-icons">grade</span>
+    </div>
+    <p>
+      {{ dateDepart }}<span>{{ duree }} Jours</span>
+    </p>
+  </mat-card-content>
+</mat-card>

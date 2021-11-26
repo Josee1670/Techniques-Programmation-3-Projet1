@@ -7,11 +7,18 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MiniForfaitComponent implements OnInit {
 
-  @Input() destination: string = " ";
-  @Input() villeDepart: string = " ";
-  @Input() hotel: string = " ";
-  @Input() dateDepart: string = " ";
-  @Input() dateRetour: string = " ";
+  @Input() destination = '';
+  @Input() villeDepart = '';
+  @Input() hotel = '';
+  @Input() taxes = '';
+  @Input() dateDepart = '';
+  @Input() dateRetour = '';
+  @Input() duree: number = 0;
+  @Input() prix: number = 0;
+  @Input() rabais: number = 0;
+  @Input() prixRabais: number = 0;
+  @Input() forfaitVedette: boolean = false;
+
 
   constructor() { }
 

@@ -1,0 +1,13 @@
+<div *ngIf="forfait">
+  <app-mini-forfait
+    [destination]="forfait.destination"
+    [villeDepart]="forfait.villeDepart"
+    [hotel]="forfait.hotel.nom"
+    [dateDepart]="forfait.dateDepart"
+    [duree]="forfait.duree"
+    [prix]="forfait.prix"
+    [rabais]="forfait.rabais"
+    [forfaitVedette]="forfait.forfaitVedette"
+  >
+  </app-mini-forfait>
+</div>

@@ -2,18 +2,26 @@ mat-card {
   background-color: rgb(94, 255, 0);
   padding: 10px;
   margin-left: -10px;
-  margin: 30px;
+  margin: 20px;
   width: 400px;
+}
+
+p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+p span {
+  color: red;
+  font-weight: bold;
 }
 h1 {
   font-size: 20px;
   color: blue;
-  text-align: center;
 }
 
 .prixRabais {
   color: green;
-  margin-left: 30px;
   font-weight: bold;
 }
 
@@ -21,12 +29,10 @@ h1 {
   text-decoration: line-through;
   color: red;
   font-weight: bold;
-  margin-left: 90px;
 }
 
 .prixAvecRabais {
   color: black;
-  margin-left: 40px;
   font-weight: bold;
 }
 
@@ -43,18 +49,4 @@ div.vedette {
   background-color: coral;
   margin-bottom: 30px;
   font-size: -15px;
-}
-
-mat-card-title span {
-  font-size: 20px;
-}
-
-mat-card-subtitle {
-  color: red;
-  margin-left: 138px;
-}
-
-span {
-  color: red;
-  font-weight: bold;
 }
